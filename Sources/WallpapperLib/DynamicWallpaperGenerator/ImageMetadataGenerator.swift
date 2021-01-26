@@ -23,7 +23,7 @@ public class ImageMetadataGenerator {
         return sortedFileNames.filter { addedDict.updateValue(true, forKey: $0) == nil }
     }()
     
-    init(pictureInfos: [PictureInfo]) {
+    public init(pictureInfos: [PictureInfo]) {
         self.pictureInfos = pictureInfos
     }
     
